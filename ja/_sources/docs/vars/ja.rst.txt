@@ -1,3 +1,4 @@
-.. |SITE_TITLE| replace:: サイトタイトル（日本語）
+
+.. |SITE_TITLE| replace:: BBO-Rietveld Documentation
 .. |INTRO| replace:: これは日本語のイントロダクションです。
 ``
