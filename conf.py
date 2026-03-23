@@ -7,13 +7,14 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'bbordocs'
-copyright = '2026, suzuki'
-author = 'suzuki'
+# copyright = '2026, suzuki'
+author = 'ks'
 release = 'n'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
+root_dic = 'docs/index'
 extensions = []
 
 templates_path = ['_templates']
