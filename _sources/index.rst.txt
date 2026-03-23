@@ -15,7 +15,7 @@ documentation for details.
    :maxdepth: 2
    :caption: Contents:
 
-   system/index
-   webapp/index
-   api/index
+   docs/system/index
+   docs/webapp/index
+   docs/api/index
 
