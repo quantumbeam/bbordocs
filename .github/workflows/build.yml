@@ -43,6 +43,13 @@ jobs:
       - name: Build EN
         run: sphinx-build -b html . _build/en
 
+      
+      - name: Copy redirect top page
+        run : |
+          BASE="${{ github.event.repository.name }}"
+          sed "s/{BASE}/${BASE}/g" index.template.html > _build/index.html
+
+          
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
