@@ -14,7 +14,7 @@ release = 'n'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-root_doc = 'docs/index'
+root_doc = 'index'
 extensions = []
 
 templates_path = ['_templates']
