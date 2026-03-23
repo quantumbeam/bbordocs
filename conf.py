@@ -28,6 +28,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'pydata_sphinx_theme'
+html_title = 'BBO-Rietveld'
 html_static_path = ['_static']
 html_css_files = ['custom.css']
 html_context = {
@@ -37,7 +38,12 @@ html_context = {
     ]
 }
 html_theme_options = {
+    "navbar_start": ["navbar-logo"],
+    "navbar_center": [],
     "navbar_end": ["theme-switcher", "version-switcher"],
+
+
+    "secondary_sidebar_items": [],
 
     "switcher": {
         "json_url": "_static/switcher.json",
