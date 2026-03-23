@@ -27,7 +27,6 @@ jobs:
         run: |
           BASE="${{ github.event.repository.name }}"
           sed "s/{BASE}/${BASE}/g" _static/switcher.template.json > _static/switcher.json
-          sed "s/{BASE}/${BASE}/g" index.template.html > _build/index.html
 
       # --- JA build ---
       - name: Prepare JA locale
@@ -49,7 +48,7 @@ jobs:
           BASE="${{ github.event.repository.name }}"
           sed "s/{BASE}/${BASE}/g" index.template.html > _build/index.html
 
-          
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
