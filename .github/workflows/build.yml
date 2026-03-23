@@ -21,15 +21,30 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install sphinx furo myst-parser
+          pip install sphinx pydata-sphinx-theme myst-parser
 
-      - name: Build HTML
-        run: |
-          sphinx-build -b html . _build/html
+      # --- JA build ---
+      - name: Prepare JA locale
+        run: cp docs/vars/ja.rst docs/vars/locale.rst
+
+      - name: Build JA
+        run: sphinx-build -b html . _build/ja
+
+      # --- EN build ---
+      - name: Prepare EN locale
+        run: cp docs/vars/en.rst docs/vars/locale.rst
+
+      - name: Build EN
+        run: sphinx-build -b html . _build/en
+
+
+      - name: Copy root redirect page
+        run: cp index.html _build/index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_build/html
+          publish_dir: ./_build
           publish_branch: built
+

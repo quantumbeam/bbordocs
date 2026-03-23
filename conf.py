@@ -15,7 +15,9 @@ release = 'n'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 root_doc = 'index'
-extensions = []
+extensions = [
+    "sphinx.ext.autosectionlabel",
+]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -25,5 +27,19 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'furo'
+html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
+html_context = {
+    "languages": [
+        ("ja", "/ja/"),
+        ("en", "/en/"),
+    ]
+}
+html_theme_options = {
+    "navbar_end": ["theme-switcher", "version-switcher"],
+
+    "switcher": {
+        "json_url": "_static/switcher.json",
+        "version_match": "ja",  # JAビルド時に上書きする
+    },
+}

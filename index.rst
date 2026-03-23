@@ -2,8 +2,10 @@
    sphinx-quickstart on Mon Mar 23 09:27:40 2026.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
+.. include:: /docs/vars/locale.rst
 
-bbordocs documentation
+
+# |SITE_TITLE|
 ======================
 
 Add your content using ``reStructuredText`` syntax. See the
