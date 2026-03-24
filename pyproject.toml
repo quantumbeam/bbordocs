@@ -5,7 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "deepl>=1.28.0",
+    "livereload>=2.7.1",
     "myst-parser>=5.0.0",
     "pydata-sphinx-theme>=0.16.1",
     "sphinx>=9.1.0",
+    "watchfiles>=1.1.1",
 ]

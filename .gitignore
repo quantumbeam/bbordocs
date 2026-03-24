@@ -14,4 +14,10 @@ wheels/
 Thumbs.db
 .idea/
 .vscode/
-``
+
+# Local build
+locale.rst
+switcher.json
+
+# Secrets
+deepl.key
