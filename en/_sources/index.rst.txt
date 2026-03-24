@@ -5,13 +5,10 @@
 .. include:: /docs/vars/locale.rst
 
 
-# |SITE_TITLE|
+|SITE_TITLE|
 ======================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
-
+|INTRO|
 
 .. toctree::
    :maxdepth: 2
@@ -21,4 +18,6 @@ documentation for details.
    docs/system/index
    docs/app/index
    docs/api/index
+
+
 
