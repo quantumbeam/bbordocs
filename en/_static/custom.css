@@ -1,9 +1,0 @@
-/* PyData Sphinx Theme のフッター全体を消す */
-.bd-footer {
-    display: none !important;
-}
-
-/* 前後ページ（Prev/Next）が出るブロックも消す */
-.prev-next-area {
-    display: none !important;
-}
