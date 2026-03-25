@@ -17,7 +17,7 @@ Thumbs.db
 
 # Local build
 locale.rst
-switcher.json
+# switcher.json
 
 # Secrets
 deepl.key

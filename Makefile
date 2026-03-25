@@ -6,13 +6,13 @@ BUILD_DIR := _build
 ja:
 	@echo "=== Building JA ==="
 	cp docs/vars/ja.rst docs/vars/locale.rst
-	SPHINX_LANG=ja $(SPHINX) -b html -D html_baseurl="/" . $(BUILD_DIR)/ja
+	SPHINX_LANG=ja $(SPHINX) -b html -D html_baseurl="/" ./docs $(BUILD_DIR)/ja
 
 # 英語ビルド
 en:
 	@echo "=== Building EN ==="
 	cp docs/vars/en.rst docs/vars/locale.rst
-	SPHINX_LANG=en $(SPHINX) -b html -D html_baseurl="/" . $(BUILD_DIR)/en
+	SPHINX_LANG=en $(SPHINX) -b html -D html_baseurl="/" ./docs $(BUILD_DIR)/en
 
 # クリーン
 clean:
