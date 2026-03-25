@@ -29,7 +29,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_title = 'BBO-Rietveld'
 html_baseurl = 'https://quantumbeam.github.io/bbordocs/'
-html_static_path = ['_static']
+html_static_path = ['../_static']
 html_css_files = ['custom.css']
 html_context = {
     "languages": [
