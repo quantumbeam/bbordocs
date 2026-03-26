@@ -17,7 +17,7 @@ release = 'n'
 
 root_doc = 'index'
 extensions = [
-    "sphinx.ext.autosectionlabel",
+    'sphinx.ext.autosectionlabel',
 ]
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -28,36 +28,35 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_title = 'BBO-Rietveld'
-html_baseurl = 'https://quantumbeam.github.io/bbordocs/'
+html_baseurl = 'https://docs.bborietveld.quantumbeam.org/'
 html_static_path = ['../_static']
 html_css_files = ['custom.css']
 html_context = {
-    "languages": [
-        ("ja", "/ja/"),
-        ("en", "/en/"),
+    'languages': [
+        ('ja', '/ja/'),
+        ('en', '/en/'),
     ]
 }
 html_sidebars = {
     '**': [
+        'search-field.html',
         'globaltoc.html',
-    ],
-    'using/windows': [
-        'windows-sidebar.html',
-        'searchbox.html',
     ],
 }
 html_theme = 'pydata_sphinx_theme'
 html_theme_options = {
-    "navbar_start": ["navbar-logo"],
-    "navbar_center": None,
-    "navbar_end": ["theme-switcher", "version-switcher"],
+    'navbar_start': ['navbar-logo'],
+    'navbar_center': None,
+    'navbar_persistent': [],
+    'navbar_end': ['theme-switcher', 'version-switcher'],
+    'navbar_align': 'content',
 
-    "show_nav_level": 2,
-    "navigation_depth": 4,
+    'show_nav_level': 2,
+    'navigation_depth': 4,
 
-    "switcher": {
-        "json_url": "_static/switcher.json",
-        "version_match": "ja",  # JAビルド時に上書きする
+    'switcher': {
+        'json_url': '_static/switcher.json',
+        'version_match': 'ja',  # JAビルド時に上書きする
     },
 }
 
