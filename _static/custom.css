@@ -1,3 +1,9 @@
+/* ページ幅の調整 */
+/* .bd-page-width .bd-main .bd-content .bd-article-container {
+    max-width: 100% !important;
+} */
+
+
 /* PyData Sphinx Theme のフッター全体を消す */
 .bd-footer {
     display: none !important;
@@ -7,3 +13,11 @@
 .prev-next-area {
     display: none !important;
 }
+
+
+/* 左サイドバーのglobaltocタイトルを消す */
+.sidebar-primary-item > h3 {
+    display: none !important;
+}
+
+
