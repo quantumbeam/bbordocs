@@ -43,6 +43,7 @@ html_sidebars = {
         'globaltoc.html',
     ],
 }
+html_show_sourcelink = False
 html_theme = 'pydata_sphinx_theme'
 html_theme_options = {
     'navbar_start': ['navbar-logo'],
