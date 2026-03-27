@@ -306,7 +306,33 @@
                   
   <section id="id1">
 <h1>ウェブアプリ・ユーザーマニュアル<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>ここでは Webアプリ版BBOリートベルトの使い方を説明します。</p>
+<p>ここではウェブアプリ版BBOリートベルトの使い方を説明します。</p>
+<section id="id2">
+<h2>はじめて使うとき<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>管理者にグループIDを発行してもらう必要があります。</p></li>
+<li><p>グループIDを使ってアカウントを作成してください。</p></li>
+<li><dl class="simple">
+<dt>測定ファイル、装置パラメータ（PRM）ファイル、初期結晶構造モデル（CIF）ファイル、解析シークエンスを用意してください。</dt><dd><ul class="simple">
+<li><p>測定ファイルは、サーバーが対応した形式である必要があります。未対応である場合はエラーが出るので管理者に依頼してください。</p></li>
+<li><p>PRMファイルはウェブアプリから作成できます。</p></li>
+<li><p>結晶構造は、CIF形式でしか受け付けていません。CIF形式でもフォーマットによってはエラーが出ることがあります。そのときはMaterials Projectからダウンロードしたファイルを使うか、Vestaで一度読み込んでから再出力したファイルを使うと解決することがあります。</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>解析シークエンスを管理者に依頼して作成してもらってください。</p></li>
+<li><dl class="simple">
+<dt>ログインして、Do refinementから必要項目を入力して、BBOリートベルトの解析を開始してください。</dt><dd><ul class="simple">
+<li><p>Instrument parameter file, CIF files, sequenceは事前にサーバーに登録しておく必要があります。</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>解析のタスク処理の進捗は、Task statusページから随時確認ができます。</p></li>
+<li><p>解析が終わったら、Resultsページから結果の閲覧ができます。</p></li>
+</ol>
+</section>
 </section>
 
 
@@ -349,13 +375,16 @@
 
 
   <div class="sidebar-secondary-item">
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/app/index.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div></div>
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">はじめて使うとき</a></li>
+</ul>
+  </nav></div>
 
 </div></div>
               
