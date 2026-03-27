@@ -41,6 +41,9 @@ jobs:
       - name: Copy redirect top page
         run : |
           cp docs/redirect.html _build/index.html
+      
+      - name: Add CNAME for custom domain
+        run : echo "docs.bborietveld.quantumbeam.org" > _build/CNAME
 
 
       - name: Deploy to GitHub Pages
